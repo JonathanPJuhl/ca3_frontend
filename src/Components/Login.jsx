@@ -1,5 +1,5 @@
 import handleHttpErrors from "./Errors"
-const URL = "http://localhost:8080/ca3";
+import {loginURL} from "../settings"
 
 
 const getToken = () => {
@@ -16,7 +16,7 @@ const loggedIn = () => {
 }
 const loginWithUser = (user, password) => {
     const options = makeOptions("POST", false,{username: user, password: password });
-    return fetch(URL + "/api/login", options)
+    return fetch(loginURL, options)
       .then(handleHttpErrors)
       .then(res => {setToken(res.token) })
  }

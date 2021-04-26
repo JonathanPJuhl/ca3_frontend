@@ -1,8 +1,8 @@
-//const URL = "http://localhost:8080/ca3/api/";
-const URL = "https//:www.ipwithme.com/tomcat/ca3/api/"
+const URL = "http://localhost:8080/tomcat/ca3/api/";
+//const URL = "/tomcat/ca3/api/"
 
 const adminURL = URL + "info/admin";
 const userURL = URL + "info/user";
 const fiveThingsURL = URL + "5things/teachersSolution";
-
-export {adminURL, userURL, fiveThingsURL};
+const loginURL = URL + "login";
+export {adminURL, userURL, fiveThingsURL, loginURL};

@@ -1,6 +1,7 @@
 {
   "name": "routingtest",
   "version": "0.1.0",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
@@ -28,6 +29,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "localhost:8080",
   "browserslist": {
     "production": [
       ">0.2%",
