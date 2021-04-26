@@ -2,8 +2,8 @@ import '../App.css';
 import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as ReactBootStrap from 'react-bootstrap'
+import {fiveThingsURL} from "../settings"
 
-const URL = "http://localhost:8080/ca3";
 
 
 function Endpoint3() {
@@ -17,8 +17,7 @@ function Endpoint3() {
   
 
   const fetchItems =  async () => { 
-    const data = await fetch(URL + '/api/5things/teachersSolution'
-    );
+    const data = await fetch(fiveThingsURL);
   
     const names = await data.json();
     //console.log(items);

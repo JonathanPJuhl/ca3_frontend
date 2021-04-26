@@ -1,3 +1,8 @@
-const amdinURL = "http://localhost:8080/ca3/api/info/admin";
-const userURL = "http://localhost:8080/ca3/api/info/user";
-const fiveThingsURL = "http://localhost:8080/ca3/api/5things/teachersSolution";
+//const URL = "http://localhost:8080/ca3/api/";
+const URL = "https//:www.ipwithme.com/tomcat/ca3/api/"
+
+const adminURL = URL + "info/admin";
+const userURL = URL + "info/user";
+const fiveThingsURL = URL + "5things/teachersSolution";
+
+export {adminURL, userURL, fiveThingsURL};
